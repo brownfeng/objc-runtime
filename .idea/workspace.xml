@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c2bdb0c5-abdd-4e88-b845-2d9b8cb3642e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFCharacterSetBitmaps.bitmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFUniCharPropertyDatabase.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFUnicodeData-B.mapping" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFUnicodeData-L.mapping" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/APPLE_LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFApplicationPreferences.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFArray.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFArray.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFAvailability.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFBag.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFBag.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFBase.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFBase.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFBasicHash.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFBasicHash.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFBasicHashFindBucket.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFBigNumber.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFBigNumber.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFBinaryHeap.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFBinaryHeap.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFBinaryPList.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFBitVector.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFBitVector.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFBuiltinConverters.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFBundle.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFBundle.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFBundlePriv.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFBundle_BinaryTypes.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFBundle_InfoPlist.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFBundle_Internal.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFBundle_Resources.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFBurstTrie.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFBurstTrie.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFByteOrder.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFCalendar.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFCalendar.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFCharacterSet.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFCharacterSet.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFCharacterSetPriv.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFConcreteStreams.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFData.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFData.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFDate.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFDate.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFDateFormatter.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFDateFormatter.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFDictionary.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFDictionary.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFError.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFError.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFError_Private.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFFileUtilities.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFICUConverters.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFICUConverters.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFICULogging.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFInternal.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFLocale.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFLocale.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFLocaleIdentifier.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFLocaleInternal.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFLocaleKeys.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFLogUtilities.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFMachPort.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFMachPort.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFMessagePort.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFMessagePort.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFNumber.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFNumber.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFNumberFormatter.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFNumberFormatter.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFOldStylePList.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFPlatform.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFPlatformConverters.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFPlugIn.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFPlugIn.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFPlugInCOM.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFPlugIn_Factory.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFPlugIn_Factory.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFPlugIn_Instance.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFPlugIn_PlugIn.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFPreferences.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFPreferences.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFPriv.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFPropertyList.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFPropertyList.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFRunLoop.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFRunLoop.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFRuntime.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFRuntime.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFSet.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFSet.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFSocket.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFSocket.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFSocketStream.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFSortFunctions.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFStorage.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFStorage.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFStream.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFStream.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFStreamAbstract.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFStreamInternal.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFStreamPriv.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFString.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFString.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFStringDefaultEncoding.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFStringEncodingConverter.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFStringEncodingConverter.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFStringEncodingConverterExt.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFStringEncodingConverterPriv.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFStringEncodingDatabase.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFStringEncodingDatabase.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFStringEncodingExt.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFStringEncodings.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFStringScanner.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFStringUtilities.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFSystemDirectories.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFTimeZone.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFTimeZone.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFTree.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFTree.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFURL.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFURL.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFURL.inc.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFURLAccess.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFURLAccess.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFURLPriv.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFUUID.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFUUID.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFUniChar.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFUniChar.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFUniCharPriv.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFUnicodeDecomposition.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFUnicodeDecomposition.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFUnicodePrecomposition.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFUnicodePrecomposition.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFUserNotification.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFUserNotification.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFUtilities.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFUtilities.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFVersion.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFWindowsUtilities.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFXMLInputStream.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFXMLInputStream.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFXMLNode.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFXMLNode.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFXMLParser.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFXMLParser.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFXMLPreferencesDomain.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CFXMLTree.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CoreFoundation.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/CoreFoundation_Prefix.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/Examples/plconvert.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/ForFoundationOnly.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/Info.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/MakefileLinux" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/MakefileVersion" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/PropertyList.dtd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/README_CFLITE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/SymbolAliases" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/TargetConditionals.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CF-855.17/plconvert.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/objc.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/objc.xcodeproj/project.pbxproj" />
+    </list>
+    <ignored path="objc-runtime.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="macos_x86_64" />
+  <component name="FavoritesManager">
+    <favorites_list name="objc" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="CFArray.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CF-855.17/CFArray.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-705">
+              <caret line="548" column="18" selection-start-line="548" selection-start-column="18" selection-end-line="548" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CFRunLoop.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CF-855.17/CFRunLoop.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1050">
+              <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="55" />
+    <option name="y" value="43" />
+    <option name="width" value="1215" />
+    <option name="height" value="737" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Cidr.FilesView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="objc" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="objc" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CF-855.17" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="Application.debug-objc">
+    <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="objc" TARGET_NAME="objc" CONFIG_NAME="Debug" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <configuration default="false" name="debug-objc" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="objc" TARGET_NAME="debug-objc" CONFIG_NAME="Debug" SCHEME_NAME="debug-objc" RUN_TARGET_PROJECT_NAME="objc" RUN_TARGET_NAME="debug-objc" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <configuration default="false" name="objc-simulator" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="objc" TARGET_NAME="objc-simulator" CONFIG_NAME="Debug" SCHEME_NAME="objc-simulator" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <configuration default="false" name="objc" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="objc" TARGET_NAME="objc" CONFIG_NAME="Debug" SCHEME_NAME="objc" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Application.debug-objc" />
+      <item index="1" class="java.lang.String" itemvalue="Application.objc-simulator" />
+      <item index="2" class="java.lang.String" itemvalue="Application.objc" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c2bdb0c5-abdd-4e88-b845-2d9b8cb3642e" name="Default" comment="" />
+      <created>1467542290963</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1467542290963</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="55" y="43" width="1215" height="737" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24938272" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CF-855.17/CFArray.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-705">
+          <caret line="548" column="18" selection-start-line="548" selection-start-column="18" selection-end-line="548" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFRunLoop.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CF-855.17/CFRunLoop.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CF-855.17/CFRunLoop.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1050">
+          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
