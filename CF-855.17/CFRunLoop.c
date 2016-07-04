@@ -2337,6 +2337,11 @@ static int32_t __CFRunLoopRun(CFRunLoopRef rl, CFRunLoopModeRef rlm, CFTimeInter
     int32_t retVal = 0;
     do {
         uint8_t msg_buffer[3 * 1024];
+#if DEPLOYMENT_TARGET_MACOSX || DEPLOYMENT_TARGET_EMBEDDED || DEPLOYMENT_TARGET_EMBEDDED_MINI
+        mach_msg_header_t *msg = NULL;
+        mach_port_t livePort = MACH_PORT_NULL;
+#endif
+        
         __CFPortSet waitSet = rlm->_portSet; //mode中需要监听的port，作为调用监听消息函数的参数
 
         __CFRunLoopUnsetIgnoreWakeUps(rl);//设置 runloop的 perRunData 数据状态,rl->_perRunData->ignoreWakeUps = 0x0;
@@ -2369,10 +2374,13 @@ static int32_t __CFRunLoopRun(CFRunLoopRef rl, CFRunLoopModeRef rlm, CFTimeInter
         // 6 如果有 Source1 (基于port) 处于 ready 状态，直接处理这个 mach port 产生的 runloopSource1信号, 跳转去处理消息 handle_msg。
         //   否则后面就会让 runloop 直接进入睡眠了
         if (MACH_PORT_NULL != dispatchPort && !didDispatchPortLastTime) {
+#if DEPLOYMENT_TARGET_MACOSX || DEPLOYMENT_TARGET_EMBEDDED || DEPLOYMENT_TARGET_EMBEDDED_MINI
+            msg = (mach_msg_header_t *)msg_buffer;
             // livePort -> 表示mach port有消息需要处理
-            if (__CFRunLoopWaitForMultipleObjects(NULL, &dispatchPort, 0, 0, &livePort, NULL)) {
+            if (__CFRunLoopServiceMachPort(dispatchPort, &msg, sizeof(msg_buffer), &livePort, 0)) {
                 goto handle_msg;
             }
+#endif
         }
 
         didDispatchPortLastTime = false;
@@ -2394,25 +2402,60 @@ static int32_t __CFRunLoopRun(CFRunLoopRef rl, CFRunLoopModeRef rlm, CFTimeInter
         
         
         __CFRunLoopSetSleeping(rl);//设置 runloop sleep 有效位,说明 runloop 进入睡眠了
-        
         // do not do any user callouts after this point (after notifying of sleeping)
-
         __CFPortSetInsert(dispatchPort, waitSet);// 睡眠时候将 dispatchPort 都加入到 waitPort 集合,会调用 mach 底层接口
-    
         __CFRunLoopModeUnlock(rlm);
         __CFRunLoopUnlock(rl);
+#if USE_DISPATCH_SOURCE_FOR_TIMERS
+        do {
+            if (kCFUseCollectableAllocator) {
+                objc_clear_stack(0);
+                memset(msg_buffer, 0, sizeof(msg_buffer));
+            }
+            msg = (mach_msg_header_t *)msg_buffer;
 
+            // 这里面开始
+            __CFRunLoopServiceMachPort(waitSet, &msg, sizeof(msg_buffer), &livePort, poll ? 0 : TIMEOUT_INFINITY);
+            
+            if (modeQueuePort != MACH_PORT_NULL && livePort == modeQueuePort) {
+                // Drain the internal queue. If one of the callout blocks sets the timerFired flag, break out and service the timer.
+                while (_dispatch_runloop_root_queue_perform_4CF(rlm->_queue));
+                if (rlm->_timerFired) {
+                    // Leave livePort as the queue port, and service timers below
+                    rlm->_timerFired = false;
+                    break;
+                } else {
+                    if (msg && msg != (mach_msg_header_t *)msg_buffer) free(msg);
+                }
+            } else {
+                // Go ahead and leave the inner loop.
+                // 跳出内部循环
+                break;
+            }
+        } while (1);
+#else
+        if (kCFUseCollectableAllocator) {
+            objc_clear_stack(0);
+            memset(msg_buffer, 0, sizeof(msg_buffer));
+        }
+        msg = (mach_msg_header_t *)msg_buffer;
+        // 这里显示的比较简单, 说明等待 MachPort唤醒, 会阻塞在这里,一旦有消息,就从这里返回
+        __CFRunLoopServiceMachPort(waitSet, &msg, sizeof(msg_buffer), &livePort, poll ? 0 : TIMEOUT_INFINITY);
+#endif
+        
         __CFRunLoopLock(rl);
         __CFRunLoopModeLock(rlm);
-
         
-        //zzzzzzzzzzzzzzzzzz...  睡眠中...
-
         // 这里开始runloop 被什么东西唤醒了!!!!!!!!!!!!! - dispatchPort 是 runloop 超时事件的发起者
         __CFPortSetRemove(dispatchPort, waitSet);
         
         __CFRunLoopSetIgnoreWakeUps(rl);//设置 runloop 的 wakeup 位,说明 runloop 已经唤醒
 
+        /*********************************    runloop  wakeup     *******************************/
+        //等到 runloop wakeup 以后,runloop 就需要去处理 source1 的消息,具体内容见下面代码
+        
+        
+        
         // user callouts now OK again
         
         // 9 通知 Observers: RunLoop 刚刚被唤醒,需要去通知观察者 -- runloop 被唤醒, 状态是kCFRunLoopAfterWaiting
