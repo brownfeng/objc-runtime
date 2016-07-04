@@ -2269,6 +2269,7 @@ static void __CFRunLoopTimeout(void *arg) {
     // The interval is DISPATCH_TIME_FOREVER, so this won't fire again
 }
 
+#pragma mark CFRunLoopRun 核心函数
 /**
  *  RunLoop 中最核心的函数之一
  *
@@ -2496,6 +2497,7 @@ handle_msg:;
     return retVal;
 }
 
+#pragma mark CFRunLoopRunSpecific核心函数
 /**
  *  RunLoop 指定特定的 mode, 超时时间等信息 运行
  *
