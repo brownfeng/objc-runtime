@@ -2503,11 +2503,24 @@ handle_msg:;
         // 9.5 如果是其他的 port ,就去处理这个 port 产生的 runloopSource1 事件
         } else {
             CFRUNLOOP_WAKEUP_FOR_SOURCE();
-            // 在 runloop 中获取与 port 相关的 CFRunLoopSourceRef
+            //9.5.1 在 runloop 中获取与 port 相关的 CFRunLoopSourceRef
             CFRunLoopSourceRef rls = __CFRunLoopModeFindSourceForMachPort(rl, rlm, livePort);
             if (rls) {
+#if DEPLOYMENT_TARGET_MACOSX || DEPLOYMENT_TARGET_EMBEDDED || DEPLOYMENT_TARGET_EMBEDDED_MINI
+                mach_msg_header_t *reply = NULL;
+                //9.5.2 调用__CFRunLoopDoSource1执行 runloopSource1 端口事件的事件处理
+                sourceHandledThisLoop = __CFRunLoopDoSource1(rl, rlm, rls, msg, msg->msgh_size, &reply) || sourceHandledThisLoop;
+                if (NULL != reply) {
+                    (void)mach_msg(reply, MACH_SEND_MSG, reply->msgh_size, 0, MACH_PORT_NULL, 0, MACH_PORT_NULL);
+                    CFAllocatorDeallocate(kCFAllocatorSystemDefault, reply);
+                }
+#endif
             }
-        } 
+        }
+        
+#if DEPLOYMENT_TARGET_MACOSX || DEPLOYMENT_TARGET_EMBEDDED || DEPLOYMENT_TARGET_EMBEDDED_MINI
+        if (msg && msg != (mach_msg_header_t *)msg_buffer) free(msg);
+#endif
         
         // 10 在一次执行加载到 runloop block 链表的 block
         __CFRunLoopDoBlocks(rl, rlm);
