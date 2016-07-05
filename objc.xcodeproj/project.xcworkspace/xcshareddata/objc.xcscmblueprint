@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "656C174B0C0FAAFDB464B2E787ACAE4C868FDBB5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "041A75B833F290D5C1BA7698A88C3F3E9FE4354D" : 0,
+    "656C174B0C0FAAFDB464B2E787ACAE4C868FDBB5" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "898E84ED-C968-4FB3-97DF-DF58CD759D2E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "041A75B833F290D5C1BA7698A88C3F3E9FE4354D" : "objc4-532.2",
+    "656C174B0C0FAAFDB464B2E787ACAE4C868FDBB5" : "objc-runtime\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "objc",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "objc.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/RetVal\/objc4-532.2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "041A75B833F290D5C1BA7698A88C3F3E9FE4354D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/brownfeng\/objc-runtime.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "656C174B0C0FAAFDB464B2E787ACAE4C868FDBB5"
+    }
+  ]
+}
