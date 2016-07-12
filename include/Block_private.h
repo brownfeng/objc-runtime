@@ -26,7 +26,57 @@ extern "C" {
 #endif
 
 
+/**
+ block 的内存管理
+ 这里用不同的枚举区分 不同内存区域的block值
+ 
+ 1.栈
+ 
+ struct __OBJ1__of2_block_impl_0 {
+ struct __block_impl impl;
+ struct __OBJ1__of2_block_desc_0* Desc;
+ OBJ1 *self;
+ __OBJ1__of2_block_impl_0(void *fp, struct __OBJ1__of2_block_desc_0 *desc, OBJ1 *_self, int flags=0) : self(_self) {
+     impl.isa = &_NSConcreteStackBlock;
+     impl.Flags = flags;
+     impl.FuncPtr = fp;
+     Desc = desc;
+    }
+ };
+ 在栈上创建的block，其isa指针是_NSConcreteStackBlock。
 
+ 2.全局区
+ 在全局区创建的block，其比较类似，其构造函数会将isa指针赋值为_NSConcreteGlobalBlock。
+ 
+ 3.堆
+ 我们无法直接创建堆上的block，堆上的block需要从stack block拷贝得来，在runtime.c中的_Block_copy_internal函数中，有这样几行：
+ 
+ // Its a stack block.  Make a copy.
+ if (!isGC) {
+     struct Block_layout *result = malloc(aBlock->descriptor->size);
+     ...
+     result->isa = _NSConcreteMallocBlock;
+     ...
+     return result;
+ }
+ 可以看到，栈block复制得来的新block，其isa指针会被赋值为_NSConcreteMallocBlock
+ 
+ 4.其余的isa类型
+ BLOCK_EXPORT void * _NSConcreteAutoBlock[32];
+ BLOCK_EXPORT void * _NSConcreteFinalizingBlock[32];
+ BLOCK_EXPORT void * _NSConcreteWeakBlockVariable[32];
+ 其他三种类型是用于gc和arc，我们暂不讨论
+ 
+ 
+ 复制block
+ 对block调用Block_copy方法，或者向其发送objc copy消息，最终都会调用runtime.c中的_Block_copy_internal函数，其内部实现会检查block的flag，从而进行不同的操作：
+ 
+ static void *_Block_copy_internal(const void *arg, const int flags) {
+     ...
+     aBlock = (struct Block_layout *)arg;
+     ...
+ }
+ */
 enum {
     BLOCK_DEALLOCATING =      (0x0001),  // runtime
     BLOCK_REFCOUNT_MASK =     (0xfffe),  // runtime
